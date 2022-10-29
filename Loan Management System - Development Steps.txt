@@ -1,0 +1,47 @@
+Loan Management System - Development Steps:
+-------------------------------------------
+Backend:-
+
+Admin - OneToMany relation with Customers and Field Officers
+Field Officers - OneToMany with customers.
+
+Database Tables:-
+
+Admin:
+ID, Name, username, password, feedback questions
+
+Customers:
+ID, Name, username, password, Feedback ans, Admin ID(FK), Loan ID(FK)
+
+Field officers:
+ID, Name, username, password, Admin ID(FK)
+
+Loan details:
+ID, Customer ID(FK), AdminID(FK), Field officer ID(FK), loan amount, tenure, annual income, pan card, status
+
+Frontend:-
+
+Login page: username and password AND Customer Registration.
+
+Login -> Admin dashboard (or) Customer dashboard (or) Field officer dashboard
+
+Admin dashboard:
+1. (View/Approve/Reject) Customer
+2. (View/Approve/Reject) Field Officers
+3. View loan requests.
+4. Assign FO to Customer for loan verification
+5. View/update/delete loan verification
+6. Add/update/delete feedback questions
+7. View customer feedback
+
+Customer dashboard:
+1. Loan request list
+2. Apply loan
+3. Help section
+4. Add feedback
+
+Field officer dashboard:
+1. Customers assigned to him list
+2. Update loan verification
+3. View help report
+
