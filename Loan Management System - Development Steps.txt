@@ -4,6 +4,7 @@ Backend:-
 
 Admin - OneToMany relation with Customers and Field Officers
 Field Officers - OneToMany with customers.
+Customer - OneToMany with loan details.
 
 Database Tables:-
 
